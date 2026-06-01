@@ -38,11 +38,12 @@
   padding: 4px 13px;
   font-size: var(--font-size);
   color: var(--button-color);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   line-height: 18px;
   cursor: pointer;
   font-weight: var(--font-weight);
   text-transform: lowercase;
+  border: 1px solid transparent;
 }
 
 .header__theme-menu-button_active {
@@ -66,7 +67,7 @@
   justify-self: start;
   padding-left: 10px;
   color: var(--header-footer-title-color);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight-bold);
   line-height: 83%;
   text-shadow: 4px 4px 0 var(--header-footer-title-shadow-color);
@@ -82,7 +83,7 @@
   text-transform: uppercase;
   line-height: 25px;
   font-size: var(--font-size);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight);
   color: var(--accent-color);
 }
@@ -95,7 +96,7 @@
   font-weight: var(--font-weight-bold);
   line-height: 23.4px;
   margin: 0 10px;
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
 }
 
 .decorative-rec::after {
@@ -148,18 +149,13 @@
 .question__title {
   width: 100%;
   font-size: var(--font-size);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height);
   color: var(--accent-color);
 }
 
 .question__answer-why {
-  display: grid;
-  gap: 20px;
-}
-
-.question__answer-what {
   display: grid;
   gap: 20px;
 }
@@ -171,7 +167,7 @@
 
 .answer__title {
   font-size: var(--font-size);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   color: var(--title-text-color);
   background-color: var(--title-decor);
   font-weight: var(--font-weight-bold);
@@ -181,7 +177,7 @@
 .advice__title {
   --font-weight-bold: 400;
   font-size: var(--font-size);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   color: var(--title-text-color);
   background-color: var(--title-decor);
   font-weight: var(--font-weight-bold);
@@ -195,11 +191,6 @@
   justify-content: center;
   align-items: center;
   min-height: 668px;
-}
-
-.question__answer-how {
-  display: grid;
-  gap: 20px;
 }
 
 .link {
@@ -221,7 +212,7 @@
 }
 
 .answer__text {
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight);
   font-size: var(--font-size);
   line-height: var(--line-height);
@@ -234,13 +225,13 @@
   font-size: var(--font-size);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
 }
 
 .footer__title {
   color: var(--header-footer-title-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-family: var(--font-family);
+  font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight-bold);
   line-height: 83%;
   text-shadow: 2px 2px 0 var(--header-footer-title-shadow-color);
@@ -274,12 +265,14 @@
 
    .header__theme-menu {
     margin-right: 20px;
+    padding-top: 23px;
   }
 
   .header__text {
     margin-right: 20px;
     justify-self: end;
     width: 47.5%;
+    margin-bottom: 30px;
   }
 
   .decorated-zone::before {
@@ -357,11 +350,17 @@
     padding-top: 20px;
     
   } 
+
+  .header__text {
+    width: 47.9%;
+    margin-bottom: 21px;
+  }
   
   .header__theme-menu {
     align-self: flex-start;
     justify-self: center;
     margin-right: 0px;
+    padding-top: 0px;
   }
 
   .header__theme-menu-list {
@@ -376,7 +375,7 @@
     gap: 10px;
   }
 
-  .desktop-1024 {
+  .desktop-container {
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
   }

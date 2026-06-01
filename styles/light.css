@@ -19,7 +19,7 @@
   --header-footer-title-shadow-color: #FF8DCB;
   --title-text-color: #353430;
   --answer-text-color: #353430;
-  --link-color-shadow: #FF8DCB;
+  --link: #FF8DCB;
   --button-color-hover: rgb(53, 52, 48, 0.4);
   --rec-display: none;
 }
@@ -35,7 +35,7 @@
     --header-footer-title-shadow-color: #FF8DCB;
     --title-text-color: #353430;
     --answer-text-color: #353430;
-    --link-color-shadow: #FF8DCB;
+    --link: #FF8DCB;
     --button-color-hover: rgb(53, 52, 4, 0.4);
     --rec-display: none;
   }
